@@ -29,3 +29,7 @@ window/stretch/scale_mode="integer"
 [filesystem]
 
 import/blender/enabled=false
+
+[physics]
+
+2d/default_gravity=0.0

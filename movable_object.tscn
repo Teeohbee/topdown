@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://0e4vkpbaj55a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kedls"]
+size = Vector2(8, 8)
+
+[sub_resource type="Gradient" id="Gradient_kedls"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kedls"]
+gradient = SubResource("Gradient_kedls")
+width = 8
+height = 8
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1548613006]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1414135993]
+shape = SubResource("RectangleShape2D_kedls")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1566112144]
+texture_filter = 1
+texture = SubResource("GradientTexture2D_kedls")
