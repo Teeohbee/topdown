@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://0e4vkpbaj55a"]
 
+[ext_resource type="Script" uid="uid://c210e5u6c0051" path="res://movable_object.gd" id="1_qkirx"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kedls"]
 size = Vector2(8, 8)
 
@@ -13,8 +15,9 @@ fill = 2
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
 
-[node name="RigidBody2D" type="RigidBody2D" unique_id=1548613006]
-lock_rotation = true
+[node name="MovableObject" type="CharacterBody2D" unique_id=1416678508]
+motion_mode = 1
+script = ExtResource("1_qkirx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1414135993]
 shape = SubResource("RectangleShape2D_kedls")
